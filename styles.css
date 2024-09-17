@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #87CEFA, #B0E0E6); /* Light blue gradient background */
+    color: #333;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+    border-radius: 15px; /* Rounded edges */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  }
+  
+  .weather-info {
+    padding: 20px;
+    border-radius: 10px; /* Rounded edges for weather info */
+    text-align: center;
+    background-color: #f9f9f9; /* Light grey background for the weather info */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for weather info */
+  }
+  
+  h1 {
+    color: #2c3e50; /* Darker color for the title */
+    text-align: center;
+  }
+  
+  h2 {
+    color: #2980b9; /* Blue color for the subtitle */
+  }
+  
+  .weather-details {
+    display: flex; /* Use Flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow wrapping to the next line if necessary */
+    justify-content: space-around; /* Space out items evenly */
+    margin-top: 20px; /* Space above the details */
+  }
+  
+  p {
+    margin: 10px; /* Space between paragraphs */
+    font-size: 1.2em; /* Slightly larger font size for readability */
+    flex: 1 1 200px; /* Allow items to grow and shrink, with a minimum width */
+    text-align: left; /* Align text to the left */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transition for smooth hover effect */
+    padding: 10px; /* Add padding for better click area */
+    border-radius: 5px; /* Rounded edges for each info item */
+  }
+  
+  p:hover {
+    transform: translateY(-3px); /* Move the item up slightly on hover */
+    background-color: rgba(41, 128, 185, 0.1); /* Light blue background on hover */
+  }
+  
+  #weather-icon {
+    font-size: 2em; /* Increase icon size */
+    margin-left: 10px; /* Space between text and icon */
+    color: #2980b9; /* Color for the weather icon */
+  }
